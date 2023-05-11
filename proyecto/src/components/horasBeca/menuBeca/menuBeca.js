@@ -1,8 +1,10 @@
+
 import React from "react";
 import {AiOutlineCalendar} from "react-icons/ai";
 import {AiOutlinePlus} from "react-icons/ai";
 import {AiOutlineTeam} from "react-icons/ai";
 import './sidebar.scss'
+import React from 'react';
 
 
 export default function Sidebar() {

@@ -28,13 +28,20 @@ main {
 
 .form_class {
     width: 400px;
-    padding: 40px;
+    padding: 70px;
     border-radius: 8px;
     background-color: white;
     font-family: 'system-ui';
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
 }
 
+#login img {
+    position: relative;
+    width: 55%;
+    height: 180px;
+    left: 85px;
+    bottom: 15px;
+}
 
 .form_div {
     text-transform: uppercase;
