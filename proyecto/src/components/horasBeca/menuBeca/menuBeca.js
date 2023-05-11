@@ -4,8 +4,7 @@ import {AiOutlinePlus} from "react-icons/ai";
 import {AiOutlineTeam} from "react-icons/ai";
 import './menuBeca.css'
 
-
-export default function Sidebar() {
+export default function MenuBeca() {
     return (
         <div id ="sidebar">
             <div className="top__links">

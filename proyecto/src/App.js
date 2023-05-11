@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from "./components/login/login.js";
-import Componente1 from "./components/horasBeca/menuBeca/menuBeca.js";
+import HorasBeca from "./components/horasBeca/horasBeca.js";
 import "./App.css";
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
             <Router>
                 <Routes>
                     <Route path="/" element={<Login />} />
-                    <Route path="/menuBeca" element={<Componente1 />} />
+                    <Route path="/horasBeca" element={<HorasBeca />} />
                 </Routes>
             </Router>
         );
