@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from "./components/login/login.js";
-import HorasBeca from "./components/horasBeca/horasBeca.js";
+import MenuBeca from "./components/horasBeca/menuBeca/menuBeca.js";
+import NuevaActividad from "./components/horasBeca/nuevaActividad/nuevaActividad.js";
 import "./App.css";
 
 class App extends Component {
@@ -10,7 +11,11 @@ class App extends Component {
             <Router>
                 <Routes>
                     <Route path="/" element={<Login />} />
-                    <Route path="/horasBeca" element={<HorasBeca />} />
+                    <Route>
+                        <Route path="/menuBeca" element={<MenuBeca />} />
+                        <Route path="/nuevaActividad" element={<NuevaActividad />} />
+                    </Route>
+                    
                 </Routes>
             </Router>
         );
