@@ -27,10 +27,11 @@ export default function MenuBeca() {
             <div className="top__links">
                 <div className="logo">
                 <img
-                src="https://camtur.org/wp-content/uploads/2021/01/Logo-UVG-002.jpg"
+                src="https://altiplano.uvg.edu.gt/admisiones/images/logo_uvgadmin.png"
                 alt="Delvalle"
                 />
                 </div>
+                <div className="divisor"></div>
                 <ul>
                     <li onClick={handleClickNA}>
                         <AiOutlinePlus style={{ fontSize: "27.5px" }}/>

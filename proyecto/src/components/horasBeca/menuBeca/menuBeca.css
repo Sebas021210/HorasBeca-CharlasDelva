@@ -1,6 +1,6 @@
 #sidebar {
-    background-color: #078b45;
-    color: #b3b3b3;
+    background-color: #00a338;
+    color: #ffff;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -17,7 +17,8 @@
   
   .logo {
     text-align: left;
-    margin: 1rem 0;
+    width: 225%;
+    height: 225%;
     margin-left: 6.5%;
   }
   
@@ -25,10 +26,22 @@
     max-inline-size: 36%;
     block-size: auto;
     margin-top: 2.5%;
+    border-radius: 10%;
+    background-color: transparent;
   }
-  
+
+  .divisor{
+    align-self: center; /* Añadido */
+    position: relative; /* Añadido */
+    margin-top: 1%;
+    margin-left: -7%;
+    width: 80%;
+    height: 12px;
+    background-color: #ffffff;
+  }
+
   ul {
-    margin-top: -1.5%;
+    margin-top: 8%;
     margin-left: 1.5%;
     list-style-type: none;
     display: flex;
@@ -48,7 +61,7 @@
   }
   
   li:hover {
-    color: white;
+    color: #b3b3b3;
   }
   
   span {
@@ -102,5 +115,5 @@
   .liked:hover{
     color: white;
   }
-        
+
 
