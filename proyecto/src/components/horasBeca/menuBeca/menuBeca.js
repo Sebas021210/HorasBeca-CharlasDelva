@@ -15,7 +15,7 @@ export default function MenuBeca() {
     };
 
     const handleClickC = () => {
-        navigateC('/menuBeca');
+        navigateC('/calendarioBeca');
     };
 
     const handleClickHA = () => {
