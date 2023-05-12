@@ -8,6 +8,25 @@ body {
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
+h1{
+    position: relative;
+    bottom: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.linea{
+    position: relative;
+    bottom: 45px;
+    height: 1.5px;
+    background-color: #000;
+}
+
+.espacio{
+    width: 350px;
+}
+
 .formbold-mb-5 {
     margin-bottom: 20px;
 }
@@ -20,7 +39,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 48px;
+    padding: 0px;
 }
 
 .formbold-form-wrapper {

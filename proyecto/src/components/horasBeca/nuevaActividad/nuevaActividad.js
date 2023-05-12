@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { AiOutlineCalendar } from "react-icons/ai";
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineTeam } from "react-icons/ai";
+import '../menuBeca/menuBeca.css'
 import './nuevaActividad.css';
 
 export default function NuevaActividad() {
@@ -28,10 +29,11 @@ export default function NuevaActividad() {
                 <div className="top__links">
                     <div className="logo">
                         <img
-                            src="https://camtur.org/wp-content/uploads/2021/01/Logo-UVG-002.jpg"
+                            src="https://altiplano.uvg.edu.gt/admisiones/images/logo_uvgadmin.png"
                             alt="Delvalle"
                         />
                     </div>
+                    <div className="divisor"></div>
                     <ul>
                         <li onClick={handleClickNA}>
                             <AiOutlinePlus style={{ fontSize: "27.5px" }} />
@@ -50,7 +52,10 @@ export default function NuevaActividad() {
             </div>
 
             <div class="formbold-main-wrapper">
+                <div className="espacio"></div>
                 <div class="formbold-form-wrapper">
+                    <h1>Nueva Actividad</h1>
+                    <div className="linea"></div>
                     <form method="POST">
                         <div class="formbold-mb-5">
                             <label for="name" class="formbold-form-label"> Actividad </label>
