@@ -58,18 +58,7 @@ export default function MenuDelva() {
                     alt="Delvalle"
                     />
                     </div>
-                </div>    
-                <div className="divisor"></div>
-                <div className="divisor_2"></div>
-                <nav class="st-menu st-effect-1" id="menu-1">
-                    <ul>
-                        <li onClick={handleClickNC}><a class="icon icon-new" href="#"><AiOutlinePlus  style={{ fontSize: "26px", color: "white", marginRight: "5%"}}/>Nueva Actividad</a></li>
-                        <li onClick={handleClickCAL}><a class="icon icon-calendar" href="#"><AiOutlineCalendar style={{ fontSize: "26px", color: "white", marginRight: "5%"}}/>Calendario</a></li>
-                        <li onClick={handleClickAH}><a class="icon icon-alumnos" href="#"><AiOutlineTeam style={{ fontSize: "26px", color: "white", marginRight: "5%"}}/>Historial alumnos</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        </div> 
     );
 }
 
