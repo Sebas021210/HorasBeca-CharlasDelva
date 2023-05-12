@@ -27,7 +27,7 @@ main {
 }
 
 .form_class {
-    width: 400px;
+    width: 550px;
     padding: 70px;
     border-radius: 8px;
     background-color: white;
@@ -39,7 +39,7 @@ main {
     position: relative;
     width: 50%;
     height: 180px;
-    left: 90px;
+    left: 100px;
     bottom: 15px;
 }
 

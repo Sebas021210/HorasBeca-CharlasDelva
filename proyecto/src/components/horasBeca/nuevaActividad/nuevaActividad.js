@@ -64,12 +64,12 @@ export default function NuevaActividad() {
                         </div>
                         <div class="formbold-mb-5">
                             <label for="description" class="formbold-form-label"> Descripción </label>
-                            <input
+                            <textarea
                                 type="text"
                                 name="description"
                                 id="description"
                                 placeholder="Descripción de la actividad"
-                                class="formbold-form-input"
+                                class="formbold-form-input-big"
                             />
                         </div>
                         <div class="flex flex-wrap formbold--mx-3">
@@ -98,15 +98,14 @@ export default function NuevaActividad() {
                         </div>
                         <div class="formbold-mb-5">
                             <label for="turnos" class="formbold-form-label"> Turnos y links </label>
-                            <input
+                            <textarea
                                 type="text"
                                 name="turnos"
                                 id="turnos"
                                 placeholder="Descripción de la actividad"
-                                class="formbold-form-input"
+                                class="formbold-form-input-big"
                             />
                         </div>
-
                         <div>
                             <button class="formbold-btn">Agregar actividad</button>
                         </div>
@@ -114,7 +113,5 @@ export default function NuevaActividad() {
                 </div>
             </div>
         </div>
-
-
     );
 }

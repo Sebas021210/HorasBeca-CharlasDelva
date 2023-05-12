@@ -34,7 +34,7 @@ body {
     display: block;
     font-weight: 500;
     font-size: 16px;
-    color: #07074d;
+    color: #000;
     margin-bottom: 12px;
 }
 
@@ -57,8 +57,21 @@ body {
     resize: none;
 }
 
+.formbold-form-input-big {
+    width: 100%;
+    padding: 55px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+}
+
 .formbold-form-input:focus {
-    border-color: #6a64f1;
+    border-color: #000;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -69,7 +82,7 @@ body {
     padding: 14px 32px;
     border: none;
     font-weight: 600;
-    background-color: #6a64f1;
+    background-color: #078B45;
     color: white;
     width: 100%;
     cursor: pointer;
@@ -99,10 +112,4 @@ body {
 
 .w-full {
     width: 100%;
-}
-
-@media (min-width: 540px) {
-    .sm\:w-half {
-        width: 50%;
-    }
 }
