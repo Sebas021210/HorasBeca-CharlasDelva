@@ -169,3 +169,107 @@ h1{
 .formbold-btn:hover {
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
+
+
+#sidebar {
+    background-color: #00a338;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 25%;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  .top__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo_black{
+    background-color: black;
+  }
+  
+  .logo {
+    text-align: left;
+    width: 225%;
+    height: 225%;
+    margin-left: 6.5%;
+  }
+  
+  .logo img {
+    max-inline-size: 36%;
+    block-size: auto;
+    margin-top: 2.5%;
+    border-radius: 10%;
+    background-color: transparent;
+  }
+
+  .divisor{
+    align-self: center; /* Añadido */
+    position: relative; /* Añadido */
+    margin-top: 1%;
+    width: 100%;
+    height: 10px;
+    background-color: black;
+  }
+
+  .divisor_2{
+    align-self: center; /* Añadido */
+    position: relative; /* Añadido */
+    margin-top: 0.5%;
+    width: 100%;
+    height: 6px;
+    background-color: black;
+  }
+  
+  span {
+    margin-left: -1%;
+  }
+
+.st-menu {
+    margin-top: 5%;
+}
+  
+.st-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.st-menu h2 {
+	margin: 0;
+	padding: 1em;
+	color: black;
+	text-shadow: 0 0 1px black;
+	font-weight: 300;
+	font-size: 2em;
+    border-bottom: none;
+}
+
+
+.st-menu ul li a {
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+    padding: 1.5em 0em 1.5em 1.7em;
+    outline: none;
+    box-shadow: inset 0 -1px black;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px black;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+.st-menu ul li:first-child a {
+	box-shadow: inset 0 -1px black, inset 0 1px black;
+}
+
+.st-menu ul li a:hover {
+	background: rgba(0,0,0,0.2);
+	box-shadow: inset 0 -1px rgba(0,0,0,0);
+}

@@ -25,31 +25,27 @@ export default function NuevaActividad() {
 
     return (
         <div>
-            <div id="sidebar">
-                <div className="top__links">
+        <div id ="sidebar">
+            <div className="top__links">
+                <div className="logo_black">
                     <div className="logo">
-                        <img
-                            src="https://altiplano.uvg.edu.gt/admisiones/images/logo_uvgadmin.png"
-                            alt="Delvalle"
-                        />
+                    <img
+                    src="https://altiplano.uvg.edu.gt/admisiones/images/logo_uvgadmin.png"
+                    alt="Delvalle"
+                    />
                     </div>
-                    <div className="divisor"></div>
+                </div>    
+                <div className="divisor"></div>
+                <div className="divisor_2"></div>
+                <nav class="st-menu st-effect-1" id="menu-1">
                     <ul>
-                        <li onClick={handleClickNA}>
-                            <AiOutlinePlus style={{ fontSize: "27.5px" }} />
-                            <span>Nueva Actividad</span>
-                        </li>
-                        <li onClick={handleClickC}>
-                            <AiOutlineCalendar style={{ fontSize: "27.5px" }} />
-                            <span>Calendario</span>
-                        </li>
-                        <li onClick={handleClickHA}>
-                            <AiOutlineTeam style={{ fontSize: "27.5px", color: "white" }} />
-                            <span>Historial alumnos</span>
-                        </li>
+                        <li onClick={handleClickNA}><a class="icon icon-new" href="#"><AiOutlinePlus  style={{ fontSize: "26px", color: "white", marginRight: "5%"}}/>Nueva Actividad</a></li>
+                        <li onClick={handleClickC}><a class="icon icon-calendar" href="#"><AiOutlineCalendar style={{ fontSize: "26px", color: "white", marginRight: "5%"}}/>Calendario</a></li>
+                        <li onClick={handleClickHA}><a class="icon icon-alumnos" href="#"><AiOutlineTeam style={{ fontSize: "26px", color: "white", marginRight: "5%"}}/>Historial alumnos</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
+        </div>
 
             <div class="formbold-main-wrapper">
                 <div className="espacio"></div>

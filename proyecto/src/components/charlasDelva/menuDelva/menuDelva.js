@@ -23,29 +23,25 @@ export default function MenuDelva() {
     };
 
     return (
-        <div id="sidebar">
+        <div id ="sidebar">
             <div className="top__links">
-                <div className="logo">
+                <div className="logo_black">
+                    <div className="logo">
                     <img
-                        src="https://altiplano.uvg.edu.gt/admisiones/images/logo_uvgadmin.png"
-                        alt="Delvalle"
+                    src="https://altiplano.uvg.edu.gt/admisiones/images/logo_uvgadmin.png"
+                    alt="Delvalle"
                     />
-                </div>
+                    </div>
+                </div>    
                 <div className="divisor"></div>
-                <ul>
-                    <li onClick={handleClickNC}>
-                        <AiOutlinePlus style={{ fontSize: "27.5px" }} />
-                        <span>Nueva Charla Delva</span>
-                    </li>
-                    <li onClick={handleClickCAL}>
-                        <AiOutlineCalendar style={{ fontSize: "27.5px" }} />
-                        <span>Calendario</span>
-                    </li>
-                    <li onClick={handleClickAH}>
-                        <AiOutlineTeam style={{ fontSize: "27.5px", color: "white" }} />
-                        <span>Historial alumnos</span>
-                    </li>
-                </ul>
+                <div className="divisor_2"></div>
+                <nav class="st-menu st-effect-1" id="menu-1">
+                    <ul>
+                        <li onClick={handleClickNC}><a class="icon icon-new" href="#"><AiOutlinePlus  style={{ fontSize: "26px", color: "white", marginRight: "5%"}}/>Nueva Actividad</a></li>
+                        <li onClick={handleClickCAL}><a class="icon icon-calendar" href="#"><AiOutlineCalendar style={{ fontSize: "26px", color: "white", marginRight: "5%"}}/>Calendario</a></li>
+                        <li onClick={handleClickAH}><a class="icon icon-alumnos" href="#"><AiOutlineTeam style={{ fontSize: "26px", color: "white", marginRight: "5%"}}/>Historial alumnos</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     );
