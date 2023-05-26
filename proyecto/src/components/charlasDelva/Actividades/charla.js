@@ -23,14 +23,14 @@ export default function Charla() {
     navigateAH('/alumnos');
   };
 
-  const [data, setData] = useState([]);
+  const [charlas, setCharlas] = useState([]);
   const [searchText, setSearchText] = useState('');
 
   useEffect(() => {
     fetch('http://localhost:5050/charlas')
       .then(response => response.json())
       .then(data => {
-        setData(data);
+        setCharlas(data);
       })
       .catch(error => {
         console.error(error);
@@ -41,8 +41,8 @@ export default function Charla() {
     setSearchText(e.target.value.toLowerCase());
   };
 
-  const filteredData = data.filter(registro =>
-    registro.dpi.toLowerCase().includes(searchText)
+  const filteredData = charlas.filter(charla =>
+    charla.nombre_charla.toLowerCase().includes(searchText)
   );
 
   return (
@@ -84,8 +84,13 @@ export default function Charla() {
       <div className="formbold-main-wrapper">
         <div className="espacio"></div>
         <div id="Titulo">
+<<<<<<< Updated upstream
           <h1>Charlas Delva</h1>
         <div className="linea"></div> 
+=======
+          <h1>Listado de Pacientes</h1>
+          <div className="linea"></div>
+>>>>>>> Stashed changes
         </div>
         <div className="search__container">
           <input id="searchInput" onChange={handleSearch} />
@@ -94,7 +99,6 @@ export default function Charla() {
           <table id="TableInventario">
             <thead>
               <tr>
-                <th>id_charla</th>
                 <th>Nombre Charla</th>
                 <th>Descripción</th>
                 <th>Fecha</th>
@@ -104,19 +108,18 @@ export default function Charla() {
               </tr>
             </thead>
             <tbody>
-              {filteredData.map(registro => (
-                <tr key={registro.dpi}>
-                  <td>{registro.dpi}</td>
-                  <td>{registro.nombre}</td>
-                  <td>{registro.direccion}</td>
-                  <td>{registro.telefono}</td>
-                  <td>{registro.altura}</td>
-                  <td>{registro.masa_corporal}</td>
-                  <td>{registro.peso}</td>
-                  <td>{registro.enfermedades_herencia}</td>
+              {filteredData.map(charla => (
+                <tr key={charla.id_charlas}>
+                  <td>{charla.nombre_charla}</td>
+                  <td>{charla.descripcion}</td>
+                  <td>{charla.fecha}</td>
+                  <td>{charla.hora}</td>
+                  <td>{charla.formato}</td>
+                  <td>{charla.comentarios}</td>
                 </tr>
               ))}
             </tbody>
+
           </table>
         </div>
       </div>
