@@ -4,9 +4,9 @@ import { AiOutlineCalendar } from "react-icons/ai";
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineTeam } from "react-icons/ai";
 import '../menuDelva/menuDelva.css'
-import './charla.css'
+import './alumnos.css'
 
-export default function Charla() {
+export default function Alumnos() {
   const navigateNC = useNavigate();
   const navigateCAL = useNavigate();
   const navigateAH = useNavigate();
@@ -84,7 +84,7 @@ export default function Charla() {
       <div className="formbold-main-wrapper">
         <div className="espacio"></div>
         <div id="Titulo">
-          <h1>Charlas Delva</h1>
+          <h1>Historial Alumnos</h1>
         <div className="linea"></div> 
         </div>
         <div className="search__container">
@@ -94,13 +94,10 @@ export default function Charla() {
           <table id="TableInventario">
             <thead>
               <tr>
-                <th>id_charla</th>
-                <th>Nombre Charla</th>
-                <th>Descripción</th>
-                <th>Fecha</th>
-                <th>hora</th>
-                <th>Formato</th>
-                <th>Comentarios</th>
+                <th>Carnet</th>
+                <th>Charlas Delva</th>
+                <th>Charlas Delva Realizadas</th>
+                <th>Charlas Delva Faltantes</th>
               </tr>
             </thead>
             <tbody>

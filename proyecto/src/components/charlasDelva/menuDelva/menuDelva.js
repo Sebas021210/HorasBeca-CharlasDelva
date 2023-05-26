@@ -20,7 +20,7 @@ export default function MenuDelva() {
     };
 
     const handleClickAH = () => {
-        navigateAH('/menuDelva');
+        navigateAH('/alumnos');
     };
 
     return (

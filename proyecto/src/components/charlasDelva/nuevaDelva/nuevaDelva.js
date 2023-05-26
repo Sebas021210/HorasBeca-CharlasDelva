@@ -20,7 +20,7 @@ export default function NuevaDelva() {
     };
 
     const handleClickAH = () => {
-        navigateAH('/menuDelva');
+        navigateAH('/alumnos');
     };
 
     return (
