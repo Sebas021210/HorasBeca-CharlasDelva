@@ -85,7 +85,7 @@ export default function Charla() {
         <div className="espacio"></div>
         <div id="Titulo">
           <h1>Charlas Delva</h1>
-        <div className="linea"></div> 
+          <div className="linea"></div>
         </div>
         <div className="search__container">
           <input id="searchInput" onChange={handleSearch} />

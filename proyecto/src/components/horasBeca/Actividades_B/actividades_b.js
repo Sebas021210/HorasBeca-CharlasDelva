@@ -23,14 +23,14 @@ export default function Actividades_B() {
         navigateHA('/alumnos_b');
     };
 
-  const [charlas, setCharlas] = useState([]);
+  const [actividades, setActividades] = useState([]);
   const [searchText, setSearchText] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5050/charlas')
+    fetch('http://localhost:5050/actividades')
       .then(response => response.json())
       .then(data => {
-        setCharlas(data);
+        setActividades(data);
       })
       .catch(error => {
         console.error(error);
@@ -41,8 +41,8 @@ export default function Actividades_B() {
     setSearchText(e.target.value.toLowerCase());
   };
 
-  const filteredData = charlas.filter(charla =>
-    charla.nombre_charla.toLowerCase().includes(searchText)
+  const filteredData = actividades.filter(actividad =>
+    actividad.nombre_actividad.toLowerCase().includes(searchText)
   );
 
   return (
@@ -91,14 +91,14 @@ export default function Actividades_B() {
               </tr>
             </thead>
             <tbody>
-              {filteredData.map(charla => (
-                <tr key={charla.id_charlas}>
-                  <td>{charla.nombre_charla}</td>
-                  <td>{charla.descripcion}</td>
-                  <td>{charla.fecha}</td>
-                  <td>{charla.hora}</td>
-                  <td>{charla.formato}</td>
-                  <td>{charla.comentarios}</td>
+              {filteredData.map(actividad => (
+                <tr key={actividad.id_actividad}>
+                  <td>{actividad.nombre_actividad}</td>
+                  <td>{actividad.descripcion}</td>
+                  <td>{actividad.fecha}</td>
+                  <td>{actividad.hora}</td>
+                  <td>{actividad.cupo_estudiantes}</td>
+                  <td>{actividad.turnos}</td>
                 </tr>
               ))}
             </tbody>

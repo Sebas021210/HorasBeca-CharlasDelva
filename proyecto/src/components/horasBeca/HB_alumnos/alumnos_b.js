@@ -23,14 +23,14 @@ export default function Alumnos_B() {
         navigateHA('/alumnos_b');
     };
 
-  const [data, setData] = useState([]);
+  const [historial_beca, setHistorialBeca] = useState([]);
   const [searchText, setSearchText] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5050/charlas')
+    fetch('http://localhost:5050/historial_estudiantes_beca')
       .then(response => response.json())
       .then(data => {
-        setData(data);
+        setHistorialBeca(data);
       })
       .catch(error => {
         console.error(error);
@@ -41,8 +41,8 @@ export default function Alumnos_B() {
     setSearchText(e.target.value.toLowerCase());
   };
 
-  const filteredData = data.filter(registro =>
-    registro.dpi.toLowerCase().includes(searchText)
+  const filteredData = historial_beca.filter(item =>
+    item.nombres.toLowerCase().includes(searchText)
   );
 
   return (
@@ -91,16 +91,14 @@ export default function Alumnos_B() {
               </tr>
             </thead>
             <tbody>
-              {filteredData.map(registro => (
-                <tr key={registro.dpi}>
-                  <td>{registro.dpi}</td>
-                  <td>{registro.nombre}</td>
-                  <td>{registro.direccion}</td>
-                  <td>{registro.telefono}</td>
-                  <td>{registro.altura}</td>
-                  <td>{registro.masa_corporal}</td>
-                  <td>{registro.peso}</td>
-                  <td>{registro.enfermedades_herencia}</td>
+              {filteredData.map(item => (
+                <tr key={item.carne}>
+                  <td>{item.carne}</td> 
+                  <td>{item.nombres}</td>
+                  <td>{item.apellidos}</td>
+                  <td>{item.max_horas_beca}</td>
+                  <td>{item.act_horas_beca}</td>
+                  <td>{item.fal_horas_beca}</td>
                 </tr>
               ))}
             </tbody>

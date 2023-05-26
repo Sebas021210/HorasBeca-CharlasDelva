@@ -23,14 +23,14 @@ export default function Alumnos() {
     navigateAH('/alumnos');
   };
 
-  const [data, setData] = useState([]);
-  const [searchText, setSearchText] = useState('');
+  const [historial, setHistorial] = useState([]);
+  const [search, setSearch] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5050/charlas')
+    fetch('http://localhost:5050/historial_estudiantes')
       .then(response => response.json())
       .then(data => {
-        setData(data);
+        setHistorial(data);
       })
       .catch(error => {
         console.error(error);
@@ -38,11 +38,11 @@ export default function Alumnos() {
   }, []);
 
   const handleSearch = (e) => {
-    setSearchText(e.target.value.toLowerCase());
+    setSearch(e.target.value.toLowerCase());
   };
 
-  const filteredData = data.filter(registro =>
-    registro.dpi.toLowerCase().includes(searchText)
+  const filteredData = historial.filter(item =>
+    item.nombres.toLowerCase().includes(search)
   );
 
   return (
@@ -85,7 +85,7 @@ export default function Alumnos() {
         <div className="espacio"></div>
         <div id="Titulo">
           <h1>Historial Alumnos</h1>
-        <div className="linea"></div> 
+          <div className="linea"></div>
         </div>
         <div className="search__container">
           <input id="searchInput" onChange={handleSearch} />
@@ -95,25 +95,26 @@ export default function Alumnos() {
             <thead>
               <tr>
                 <th>Carnet</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
                 <th>Charlas Delva</th>
                 <th>Charlas Delva Realizadas</th>
                 <th>Charlas Delva Faltantes</th>
               </tr>
             </thead>
             <tbody>
-              {filteredData.map(registro => (
-                <tr key={registro.dpi}>
-                  <td>{registro.dpi}</td>
-                  <td>{registro.nombre}</td>
-                  <td>{registro.direccion}</td>
-                  <td>{registro.telefono}</td>
-                  <td>{registro.altura}</td>
-                  <td>{registro.masa_corporal}</td>
-                  <td>{registro.peso}</td>
-                  <td>{registro.enfermedades_herencia}</td>
+              {filteredData.map(item => (
+                <tr key={item.carne}>
+                  <td>{item.carne}</td>
+                  <td>{item.nombres}</td>
+                  <td>{item.apellidos}</td>
+                  <td>{item.charlas_delva}</td>
+                  <td>{item.act_charlas_delva}</td>
+                  <td>{item.fal_charlas_delva}</td>
                 </tr>
               ))}
             </tbody>
+
           </table>
         </div>
       </div>
