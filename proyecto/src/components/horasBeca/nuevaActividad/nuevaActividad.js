@@ -16,7 +16,7 @@ export default function NuevaActividad() {
     };
 
     const handleClickC = () => {
-        navigateC('/calendarioBeca');
+        navigateC('/actividades');
     };
 
     const handleClickHA = () => {

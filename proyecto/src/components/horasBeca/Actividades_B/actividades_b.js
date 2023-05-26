@@ -3,25 +3,25 @@ import { useNavigate } from 'react-router-dom';
 import { AiOutlineCalendar } from "react-icons/ai";
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineTeam } from "react-icons/ai";
-import '../menuDelva/menuDelva.css'
-import './charla.css'
+import '../menuBeca/menuBeca.css'
+import './actividades_b.css'
 
-export default function Charla() {
-  const navigateNC = useNavigate();
-  const navigateCAL = useNavigate();
-  const navigateAH = useNavigate();
+export default function Actividades_B() {
+    const navigateNA = useNavigate();
+    const navigateC = useNavigate();
+    const navigateHA = useNavigate();
 
-  const handleClickNC = () => {
-    navigateNC('/nuevaDelva');
-  };
+    const handleClickNA = () => {
+        navigateNA('/nuevaActividad');
+    };
 
-  const handleClickCAL = () => {
-    navigateCAL('/charla');
-  };
+    const handleClickC = () => {
+        navigateC('/actividades');
+    };
 
-  const handleClickAH = () => {
-    navigateAH('/alumnos');
-  };
+    const handleClickHA = () => {
+        navigateHA('/alumnos_b');
+    };
 
   const [charlas, setCharlas] = useState([]);
   const [searchText, setSearchText] = useState('');
@@ -61,21 +61,9 @@ export default function Charla() {
           <div className="divisor_2"></div>
           <nav className="st-menu st-effect-1" id="menu-1">
             <ul>
-              <li onClick={handleClickNC}>
-                <a className="icon icon-new" href="#">
-                  <AiOutlinePlus style={{ fontSize: "26px", color: "white", marginRight: "5%" }} />Nueva Charla Delva
-                </a>
-              </li>
-              <li onClick={handleClickCAL}>
-                <a className="icon icon-calendar" href="#">
-                  <AiOutlineCalendar style={{ fontSize: "26px", color: "white", marginRight: "5%" }} />Charlas
-                </a>
-              </li>
-              <li onClick={handleClickAH}>
-                <a className="icon icon-alumnos" href="#">
-                  <AiOutlineTeam style={{ fontSize: "26px", color: "white", marginRight: "5%" }} />Historial alumnos
-                </a>
-              </li>
+            <li onClick={handleClickNA}><a class="icon icon-new" href="#"><AiOutlinePlus style={{ fontSize: "26px", color: "white", marginRight: "5%" }} />Nueva Actividad</a></li>
+            <li onClick={handleClickC}><a class="icon icon-calendar" href="#"><AiOutlineCalendar style={{ fontSize: "26px", color: "white", marginRight: "5%" }} />Actividades Horas Beca</a></li>
+            <li onClick={handleClickHA}><a class="icon icon-alumnos" href="#"><AiOutlineTeam style={{ fontSize: "26px", color: "white", marginRight: "5%" }} />Historial alumnos</a></li>
             </ul>
           </nav>
         </div>
@@ -84,7 +72,7 @@ export default function Charla() {
       <div className="formbold-main-wrapper">
         <div className="espacio"></div>
         <div id="Titulo">
-          <h1>Charlas Delva</h1>
+          <h1>Actividades Horas Beca</h1>
         <div className="linea"></div> 
         </div>
         <div className="search__container">
@@ -94,12 +82,12 @@ export default function Charla() {
           <table id="TableInventario">
             <thead>
               <tr>
-                <th>Nombre Charla</th>
+                <th>Nombre Actividad Horas Beca</th>
                 <th>Descripción</th>
                 <th>Fecha</th>
                 <th>hora</th>
-                <th>Formato</th>
-                <th>Comentarios</th>
+                <th>Cupo de Estudiantes</th>
+                <th>Turnos</th>
               </tr>
             </thead>
             <tbody>
