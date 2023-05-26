@@ -7,6 +7,7 @@ import NuevaActividad from "./components/horasBeca/nuevaActividad/nuevaActividad
 import NuevaDelva from "./components/charlasDelva/nuevaDelva/nuevaDelva.js";
 import CalendarioBeca from "./components/horasBeca/calendarioBeca/calendarioBeca.js";
 import CalendarioDelva from "./components/charlasDelva/calendarioDelva/calendarioDelva.js";
+import Charla from "./components/charlasDelva/Actividades/charla.js";
 import "./App.css";
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
                         <Route path="/menuDelva" element={<MenuDelva />} />
                         <Route path="/nuevaDelva" element={<NuevaDelva />} />
                         <Route path="/calendarioDelva" element={<CalendarioDelva />} />
+                        <Route path="/charla" element={<Charla />} />
                     </Route>
                 </Routes>
             </Router>

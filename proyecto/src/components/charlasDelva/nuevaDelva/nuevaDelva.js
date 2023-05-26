@@ -16,7 +16,7 @@ export default function NuevaDelva() {
     };
 
     const handleClickCAL = () => {
-        navigateCAL('/calendarioDelva');
+        navigateCAL('/charla');
     };
 
     const handleClickAH = () => {
@@ -40,7 +40,7 @@ export default function NuevaDelva() {
                 <nav class="st-menu st-effect-1" id="menu-1">
                     <ul>
                         <li onClick={handleClickNC}><a class="icon icon-new" href="#"><AiOutlinePlus  style={{ fontSize: "26px", color: "white", marginRight: "5%"}}/>Nueva Charla Delva</a></li>
-                        <li onClick={handleClickCAL}><a class="icon icon-calendar" href="#"><AiOutlineCalendar style={{ fontSize: "26px", color: "white", marginRight: "5%"}}/>Calendario</a></li>
+                        <li onClick={handleClickCAL}><a class="icon icon-calendar" href="#"><AiOutlineCalendar style={{ fontSize: "26px", color: "white", marginRight: "5%"}}/>Charlas</a></li>
                         <li onClick={handleClickAH}><a class="icon icon-alumnos" href="#"><AiOutlineTeam style={{ fontSize: "26px", color: "white", marginRight: "5%"}}/>Historial alumnos</a></li>
                     </ul>
                 </nav>
