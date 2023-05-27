@@ -78,7 +78,7 @@ export default function Actividades_B() {
         <div className="search__container">
           <input id="searchInput" onChange={handleSearch} />
         </div>
-        <div className="container">
+        <div className="container_2">
           <table id="TableInventario">
             <thead>
               <tr>

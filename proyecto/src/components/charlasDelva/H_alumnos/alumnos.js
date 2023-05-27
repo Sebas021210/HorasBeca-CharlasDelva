@@ -90,7 +90,7 @@ export default function Alumnos() {
         <div className="search__container">
           <input id="searchInput" onChange={handleSearch} />
         </div>
-        <div className="container">
+        <div className="container_1">
           <table id="TableInventario">
             <thead>
               <tr>

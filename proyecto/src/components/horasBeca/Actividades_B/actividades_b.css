@@ -170,9 +170,9 @@
 
 
 
-.container {
+.container_2 {
 position: absolute;
-top: 35%;
+margin-top: 85%;
 left: 63%;
 transform: translate(-50%, -50%);
 }
